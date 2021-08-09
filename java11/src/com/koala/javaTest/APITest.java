@@ -35,10 +35,7 @@ public class APITest {
 
         // 集合的创建可以使用更简单的方式
         List<String> list2 = List.of("aa", "bbb", "cc", "DD");
-        System.out.println(list2);
-
         //list2.add("yyy"); // 不可以添加元素
-        System.out.println(list2);
     }
 
     // 集合中的一些增强的API

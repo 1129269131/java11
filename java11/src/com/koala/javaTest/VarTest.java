@@ -26,10 +26,10 @@ public class VarTest {
         Consumer<String> consumer2 = (var t) -> System.out.println(t.toUpperCase());
         consumer2.accept("abcdEfg");
 
-        //错误的形式: 必须要有类型, 可以加上var
+        //错误的形式：必须要有类型, 可以加上var
         //Consumer<String> consumer3 = (@Deprecated t) -> System.out.println(t.toUpperCase());
 
-        //正确的形式:
+        //正确的形式：
         Consumer<String> consumer4 = (@Deprecated var t) -> System.out.println(t.toUpperCase());
         consumer4.accept("abcdEfg");
     }

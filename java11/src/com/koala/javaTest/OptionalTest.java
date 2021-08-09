@@ -19,7 +19,7 @@ public class OptionalTest {
         Object object = optional.orElse("abc"); // 如果内部引用为空, 则返回参数中的引用, 否则返回内部引用
         System.out.println(object);
 
-        Object object2 = optional.orElseGet(() -> {return "deg";});
+        Object object2 = optional.orElseGet(() -> "deg");
         System.out.println(object2);
 
         Object object3 = optional.orElseThrow();
